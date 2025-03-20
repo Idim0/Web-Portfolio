@@ -1,0 +1,372 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '', Arial, sans-serif;
+    background-color: #FFF0D8;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    margin-top: 80px; /* Offset for fixed navbar */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #697077;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-image img {
+    max-width: 50px;
+    height: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 2rem 10%;
+    margin-top: 60px;
+}
+
+.hero-image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #2F4858;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.choose-me-btn {
+    background-color: #697077;
+    color: white;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.choose-me-btn:hover {
+    background-color: #5A6268;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.competency-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.competency-title {
+    position: absolute;
+    top: 20px; /* Atur sesuai kebutuhan */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff; /* Warna putih agar kontras dengan gambar */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Pastikan berada di atas gambar */
+}
+
+.competency-image img {
+    width: 50%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    justify-items: center;
+}
+
+.competency-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    text-align: left;
+    background: #FAEBD7; /* Warna latar belakang agar konsisten */
+}
+
+
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Tengahkan semua elemen */
+}
+
+.testimonials-content h2 {
+    font-size: 2.5rem;
+    color: #2F4858;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center; /* Tengahkan elemen dalam card */
+    text-align: left;
+    max-width: 700px; /* Agar tidak terlalu lebar */
+    gap: 1.5rem; /* Jarak antara gambar dan teks */
+}
+
+.testimonials-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-text {
+    flex: 1; /* Teks mengisi sisa ruang */
+}
+
+.testimonial-text h3 {
+    font-size: 1.1rem;
+    color: #2F4858;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.testimonial-text p {
+    font-style: italic;
+    color: #666;
+}
+
+
+/* Portfolio Section */
+.portfolio {
+    padding: 4rem 10%;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.portfolio-image {
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-image:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio h4 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    color: #2F4858;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 10%;
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    color: #2F4858;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #697077;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: block;
+    margin: 2rem auto 0;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #697077;
+    color: white;
+    margin-top: 4rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #FFF0D8;
+}
+
+.image-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.image-social img {
+    width: 35px;
+    transition: transform 0.3s ease;
+}
+
+.image-social img:hover {
+    transform: translateY(-3px);
+}
+
+.footer-copyright {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+    
+    .about, .competency {
+        flex-direction: column;
+        padding: 4rem 1rem;
+    }
+    
+    .hero-image img,
+    .about-image img,
+    .competency-image img {
+        max-width: 100%;
+    }
+    
+    .portfolio-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer {
+        padding: 2rem 1rem;
+    }
+    
+    .navbar a {
+        padding: 0.5rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-image img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .image-social {
+        gap: 1rem;
+    }
+    
+    .footer a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
